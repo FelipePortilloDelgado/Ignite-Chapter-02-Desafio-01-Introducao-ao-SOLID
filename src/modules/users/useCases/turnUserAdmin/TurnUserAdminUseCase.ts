@@ -14,6 +14,7 @@ class TurnUserAdminUseCase {
     if (!user) {
       throw new Error("User not found!");
     }
+
     return this.usersRepository.turnAdmin(user);
   }
 }

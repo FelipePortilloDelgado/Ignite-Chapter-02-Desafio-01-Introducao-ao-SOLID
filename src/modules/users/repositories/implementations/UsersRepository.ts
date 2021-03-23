@@ -53,7 +53,8 @@ class UsersRepository implements IUsersRepository {
 
   list(): User[] {
     // Complete aqui
-    return UsersRepository.INSTANCE.users;
+    const { users } = UsersRepository.INSTANCE;
+    return users;
   }
 }
 
